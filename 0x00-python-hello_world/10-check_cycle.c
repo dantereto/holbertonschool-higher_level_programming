@@ -7,7 +7,7 @@
 int check_cycle(listint_t *list)
 {
 listint_t *slow = list, *fast = list;
-if (list == '\0' || list->next == '\0')
+if (list == '\0' && list->next == '\0')
 return (0);
 while (slow != '\0' && fast != '\0' && fast != '\0')
 {
