@@ -6,6 +6,8 @@
  */
 int check_cycle(listint_t *list)
 {
+if(list == '\0' && list->next == '\0')
+return (0);
 listint_t *slow = list, *fast = list;
 while (slow != '\0' && fast != '\0' && fast != '\0')
 {
