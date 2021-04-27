@@ -5,9 +5,9 @@ if number >= 0:
     n = number % 10
 else:
     n = number % (-10)
-if number % 10 == 0:
+if n == 0:
     print("Last digit of {} is {:d} and is 0".format(number, n))
-elif (number % 10 > 5):
+elif n > 5:
     print("Last digit of {} is {:d} and is greater than 5".format(number, n))
 else:
     print("Last digit of {} is {:d} and is less than 6 and not 0".format(number, n))
