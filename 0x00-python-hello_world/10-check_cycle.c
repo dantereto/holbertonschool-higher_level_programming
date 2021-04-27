@@ -14,7 +14,7 @@ while (slow != '\0' && fast != '\0' && fast != '\0')
 slow = slow->next;
 fast = fast->next->next;
 if (slow == fast)
-return (1)
+return (1);
 }
 return (0);
 }
