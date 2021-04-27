@@ -11,10 +11,10 @@ if (list == '\0' || list->next == '\0')
 return (0);
 while (slow != '\0' && fast != '\0' && fast != '\0')
 {
-slow = slow->next;
-fast = fast->next->next;
 if (slow == fast)
 return (1);
+slow = slow->next;
+fast = fast->next->next;
 }
 return (0);
 }
