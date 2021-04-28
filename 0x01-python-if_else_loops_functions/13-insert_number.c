@@ -17,8 +17,7 @@ new->n = n;
 new->next = NULL;
 if (head == NULL)
 {
-*head = new;
-return (new);
+return ('\0');
 }
 while (head2->next != '\0' && head2->next->n < new->n)
 head2 = head2->next;
