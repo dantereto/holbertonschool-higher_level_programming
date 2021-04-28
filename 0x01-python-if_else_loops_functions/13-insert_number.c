@@ -17,6 +17,11 @@ new->n = n;
 new->next = NULL;
 if (head == NULL)
 return ('\0');
+if (head2 == '\0' || head2->n >= new->n)
+{
+new->next = head2;
+head2 = new;
+}
 while (head2->next != '\0' && head2->next->n < new->n)
 head2 = head2->next;
 new->next = head2->next;
