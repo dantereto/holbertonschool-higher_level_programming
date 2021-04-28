@@ -10,5 +10,4 @@ if __name__ == '__main__':
         print('{} arguments:'.format(suma - 1))
     for args in range(0, suma):
         if args > 0:
-            print("{}: {}"
-                  .format(args, sys.argv[args]))
+            print("{}: {}".format(args, sys.argv[args]))
