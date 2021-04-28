@@ -6,4 +6,4 @@ if __name__ == '__main__':
         print('0 arguments.')
     print('{:d} arguments:'.format(suma - 1))
     for args in range(1, suma):
-        print("{:d}: {}".format(args, sys.argv[args]))
+        print("{:d}: {:s}".format(args, sys.argv[args]))
