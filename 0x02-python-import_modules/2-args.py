@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import sys
 if __name__ == '__main__':
+    import sys
     suma = len(sys.argv)
     if suma == 1:
         print('{} arguments.'.format(suma - 1))
