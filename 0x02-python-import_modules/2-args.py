@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import sys
+from sys import argv
 if __name__ == '__main__':
-    suma = len(sys.argv)
+    suma = len(argv)
     if suma == 1:
         print('{} arguments.'.format(suma - 1))
     elif suma == 2:
@@ -11,4 +11,4 @@ if __name__ == '__main__':
     for args in range(0, suma):
         if args > 0:
             print("{}: {}"
-                  .format(args, sys.argv[args]))
+                  .format(args, argv[args]))
