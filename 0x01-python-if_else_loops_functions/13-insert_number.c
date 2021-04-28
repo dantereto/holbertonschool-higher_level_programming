@@ -16,11 +16,9 @@ return ('\0');
 new->n = n;
 new->next = NULL;
 if (head == NULL)
-return ('\0');
-if (head2 == '\0' || head2->n >= new->n)
 {
-new->next = head2;
-head2 = new;
+*head = new;
+return (new);
 }
 while (head2->next != '\0' && head2->next->n < new->n)
 head2 = head2->next;
