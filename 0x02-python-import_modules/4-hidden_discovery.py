@@ -2,6 +2,6 @@
 if __name__ == '__main__':
     import hidden_4
     for num in dir(hidden_4):
-        if i[0:2] == '__':
+        if num[0:2] == '__':
             continue
         print('{}'.format(i))
