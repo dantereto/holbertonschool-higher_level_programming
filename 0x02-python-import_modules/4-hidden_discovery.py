@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-if __name__ == '__main__':
-    import hidden_4
-    dirs = dir(hiddden_4)
-    space = '__'
-    for num in range(0, len(dirs)):
-        if space not in dirs:
+import hidden_4
+import sys
+if __name__ == "__main__":
+    dirs = dir(hidden_4)
+    for i in secret_names:
+        if '__' not in dirs[i]:
             print(dirs[num])
