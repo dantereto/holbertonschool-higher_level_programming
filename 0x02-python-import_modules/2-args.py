@@ -2,10 +2,10 @@
 if __name__ == '__main__':
     import sys
     suma = len(sys.argv)
-    if suma == 0:
+    if suma == 1:
         print("0 arguments.")
-    elif suma == 1:
-        print("1 arguments:")
+    elif suma == 2:
+        print("1 argument:")
     else:
         print("{:d} arguments:".format(suma - 1))
     for args in range(0, suma):
