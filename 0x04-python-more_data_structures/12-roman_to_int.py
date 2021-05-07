@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    if roman_string == None:
+    if roman_string == None or type(roman_string) != str:
         return (0)
     sum = 0
     r_dic = {"I": 1, "V": 5, "X": 10, "L": 50
