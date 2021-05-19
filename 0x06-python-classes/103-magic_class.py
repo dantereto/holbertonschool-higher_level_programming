@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 import math
+"""square class"""
 class MagicClass:
+    """start"""
     def __init__(self, radius=0):
         if type(raduis) is not int and type(radius) is not float:
             raise TypeError('radius must be a number')
