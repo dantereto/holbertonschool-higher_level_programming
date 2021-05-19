@@ -3,11 +3,8 @@
 
 
 class Square:
-    """int: Module level variable documented inline.
-
-The docstring may span multiple lines. The type may optionally be specified
-on the first line, separated by a colon.
-    """
+ """initialize"""
+    
     def __init__(self, size=0):
           if type(size) is not int:
                raise TypeError('size must be an integer')
