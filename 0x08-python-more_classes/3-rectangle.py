@@ -30,3 +30,10 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return(0)
         return (self.__width * 2) + (self.__height * 2)
+    
+    def __str__(self):
+        size = '#' * self.__width
+        copy = size
+        for i in range(self.height):
+            copy += '\n' + size
+        return copy
