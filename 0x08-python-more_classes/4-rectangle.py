@@ -42,9 +42,11 @@ class Rectangle:
         return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
+        if self.width == 0 or self.height == 0:
+            print('')
         size = '#' * self.__width
         copy = size
-        for i in range(self.height):
+        for i in range(self.height - 1):
             copy += '\n' + size
         return copy
 
