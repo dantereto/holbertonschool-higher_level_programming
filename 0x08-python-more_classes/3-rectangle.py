@@ -13,7 +13,7 @@ class Rectangle:
             return ('')
         size = '#' * self.__width
         copy = size
-        for i in range(self.height):
+        for i in range(self.height - 1):
             copy += '\n' + size
         return copy
 
