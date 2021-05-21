@@ -8,6 +8,8 @@ class Rectangle:
         self.width = width
         self.height = height
     def __str__(self):
+        if self.width == 0 or self.height == 0:
+            return ('')
         size = '#' * self.__width
         copy = size
         for i in range(self.height):
