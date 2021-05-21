@@ -7,7 +7,7 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-     def __str__(self):
+    def __str__(self):
         size = '#' * self.__width
         copy = size
         for i in range(self.height):
