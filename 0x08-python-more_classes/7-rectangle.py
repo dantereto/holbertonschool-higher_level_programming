@@ -46,13 +46,11 @@ class Rectangle:
         return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
+        copy = ""
         if self.width == 0 or self.height == 0:
             print('')
-        size = (str(self.print_symbol)) * self.__width
-        copy = size
-        for i in range(self.height):
-            copy += '\n' + size
-        return copy
+        copy += (str(self.print_symbol) * self.__width + "\n") * self.__height
+        return copy[:-1]
 
     def __repr__(self):
         return('Rectangle({:d}, {:d})'.format(self.__width, self.__height))
