@@ -3,8 +3,8 @@
 
 
 class Rectangle:
-    number_of_instances = 0
     """dont do anything"""
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         self.width = width
@@ -48,7 +48,7 @@ class Rectangle:
             print('')
         size = '#' * self.__width
         copy = size
-        for i in range(self.height - 1):
+        for i in range(self.height):
             copy += '\n' + size
         return copy
 
