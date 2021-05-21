@@ -1,12 +1,17 @@
 #!/usr/bin/python3
+"""create a class"""
+
+
 class Rectangle:
     """dont do anything"""
     def __init__(self, width=0, height=0):
-        self.__width = width 
+        self.__width = width
         self.__height = height
+
     @property
     def width(self):
         return(self.__width)
+
     @width.setter
     def width(self, value):
         if type(value) != int:
@@ -14,9 +19,11 @@ class Rectangle:
         if value < 0:
             raise ValueError('width must be >= 0')
         self.__width = value
+
     @property
     def height(self):
         return(self.height)
+
     @height.setter
     def height(self, value):
         if type(value) != int:
