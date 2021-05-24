@@ -1,0 +1,27 @@
+the add_integer Module:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Now use it:
+    >>> print(add_integer(1, 2))
+    3
+    >>> print(add_integer(100, -2))
+    98
+    >>> print(add_integer(2))
+    100
+    >>> print(add_integer(100.3, -2))
+    98
+    >>> add_integer(-1)
+    97
+    >>> add_integer()
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+    >>> print(add_integer('hola', "adios"))
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> print(add_integer(12, "adios"))
+    Traceback (most recent call last):
+    TypeError: b must be an integer
