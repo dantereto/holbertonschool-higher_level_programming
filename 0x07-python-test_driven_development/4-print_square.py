@@ -1,5 +1,10 @@
 #!/usr/bin/python3
+"""create the function"""
+
+
 def print_square(size):
+    """start"""
+
     if type(size) != int:
         raise TypeError('size must be an integer')
     if size < 0:

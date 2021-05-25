@@ -1,5 +1,10 @@
 #!/usr/bin/python3
+"""create function"""
+
+
 def matrix_divided(matrix, div):
+    """start"""
+
     if div == 0:
         raise ZeroDivisionError('division by zero')
     if type(div) != int and type(div) != float:

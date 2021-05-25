@@ -1,5 +1,10 @@
 #!/usr/bin/python3
+"""create the function"""
+
+
 def text_indentation(text):
+    """start"""
+
     if type(text) != str:
         raise TypeError('text must be a string')
     for ch in range(len(text)):
