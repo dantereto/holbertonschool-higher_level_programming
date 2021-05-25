@@ -2,7 +2,7 @@
 def text_indentation(text):
     if type(text) != str:
         raise TypeError('text must be a string')
-    for ch in range (len(text)):
+    for ch in range(len(text)):
         if ch > 0 and text[ch] == ' ' and text[ch - 1] in '?.:':
             continue
         print(text[ch], end='')
