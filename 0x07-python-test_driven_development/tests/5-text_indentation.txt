@@ -1,0 +1,16 @@
+the text_indentation Module:
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Now use it:
+    
+    >>> text_indentation('''hola. como estas? amigo:''')
+    hola.
+    <BLANKLINE>
+    como estas?
+    <BLANKLINE>
+    amigo:
+    <BLANKLINE>
+    >>> text_indentation(2)
+    Traceback (most recent call last):
+    TypeError: text must be a string
