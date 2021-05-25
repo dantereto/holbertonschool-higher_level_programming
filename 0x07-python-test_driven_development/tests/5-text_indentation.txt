@@ -14,3 +14,10 @@ Now use it:
     >>> text_indentation(2)
     Traceback (most recent call last):
     TypeError: text must be a string
+    >>> text_indentation(['hola'])
+    Traceback (most recent call last):
+    TypeError: text must be a string
+    >>> text_indentation(' space. space')
+     space.
+    <BLANKLINE>
+    space
