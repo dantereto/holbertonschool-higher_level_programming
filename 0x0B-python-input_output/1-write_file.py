@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""creste function"""
+
+
 def write_file(filename="", text=""):
-     with open(filename, 'w', encoding="utf-8") as f:
+    """ writes a string to a text file """
+
+    with open(filename, 'w', encoding="utf-8") as f:
         return f.write(text)
