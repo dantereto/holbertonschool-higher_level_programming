@@ -55,3 +55,15 @@ Now use it:
     >>> bg.integer_validator('hola', {2, 3, 4})
     Traceback (most recent call last):
     TypeError: hola must be an integer
+    
+    >>> bg.integer_validator(, 3)
+    Traceback (most recent call last):
+    SyntaxError: invalid syntax
+
+    >>> bg.integer_validator('hola', -1) 
+    Traceback (most recent call last):
+    ValueError: hola must be greater than 0
+    
+    >>> bg.integer_validator('hola', [2, 4, 6])
+    Traceback (most recent call last):
+    TypeError: hola must be an integer
