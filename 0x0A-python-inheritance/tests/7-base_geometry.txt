@@ -79,3 +79,13 @@ Now use it:
    >>> bg.integer_validator('hola', 0.5)
    Traceback (most recent call last):
    TypeError: hola must be an integer
+   
+   >>> bg.integer_validator('hola', False)
+   Traceback (most recent call last):
+   TypeError: hola must be an integer
+
+   >>> bg.integer_validator('', False)
+   Traceback (most recent call last):
+   TypeError:  must be an integer
+
+  
