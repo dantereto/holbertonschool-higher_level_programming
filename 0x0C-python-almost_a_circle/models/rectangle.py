@@ -79,16 +79,7 @@ class Rectangle(Base):
                 self.__y = args[4]
         else:
             for key, value in kwargs.items():
-                if key == 'id':
-                    self.id = value
-                elif key == 'width':
-                    self.__width = value
-                elif key == 'height':
-                    self.__height = value
-                elif key == 'x':
-                    self.__x = value
-                elif key == 'y':
-                    self.__y = value
+                setattr(self, key, value)
     def to_dictionary(self):
         dict_r  = {'id': self.id, 'width': self.width, 'height': self.height,
                 'x': self.x, 'y': self.y}
