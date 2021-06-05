@@ -64,18 +64,32 @@ class Rectangle(Base):
         for j in range(self.__height):
             print(' ' * self.__x + '#' * self.__width)
     def __str__(self):
-        string = '[Rectangle] ' + '(' + str(self.id) + ')' + ' ' + str(self.__x) + '/' + str(self.__y) 
-        string += ' ' + '- ' + str(self.__width) + '/' 
-        string += str(self.__height)
-        return (string)
-    def update(self, *args):
-        if len(args) > 0:
-            self.id = args[0]
-        if len(args) > 1:
-            self.__width = args[1]
-        if len(args) > 2:
-            self.__height = args[2]
-        if len(args) > 3:
-            self.__x = args[3]
-        if len(args) > 4:
-            self.__y = args[4]
+        return "[{}] ({}) {:d}/{:d} - {:d}/{:d}".format('Rectangle', self.id, self.__x, self.__y, self.__width, self.__height)
+    def update(self, *args, **kwargs):
+        if args:
+            if len(args) == 0:
+                self.id = args[0]
+            if len(args) == 1:
+                self.__width = args[1]
+            if len(args) == 2:
+                self.__height = args[2]
+            if len(args) == 3:
+                self.__x = args[3]
+            if len(args) == 4:
+                self.__y = args[4]
+        else:
+            for key, value in kwargs.items():
+                if key == 'id':
+                    self.id = value
+                elif key == 'width':
+                    self.__width = value
+                elif key == 'height':
+                    self.__height = value
+                elif key == 'x':
+                    self.__x = value
+                elif key == 'y':
+                    self.__y = value
+    def to_dictionary(self):
+        dict_r  = {'id': self.id, 'width': self.width, 'height': self.height,
+                'x': self.x, 'y': self.y}
+        return (dict_r)
