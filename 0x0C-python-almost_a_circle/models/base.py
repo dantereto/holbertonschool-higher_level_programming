@@ -64,7 +64,7 @@ class Base:
         filename = (cls.__name__) + '.json'
         if os.stat(filename).st_size == 0:
             return []
-        with open(filename, 'r' encoding="UTF-8") as f:
+        with open(filename, 'r', encoding="UTF-8") as f:
             data = f.read()
             string_r = Base.from_json_string(data)
             for instances in string_r:
