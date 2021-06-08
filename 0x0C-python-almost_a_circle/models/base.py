@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """start the function"""
 
+import csv
+
 import turtle
 
 import json
@@ -56,9 +58,37 @@ class Base:
     def load_from_file(cls):
         list_l = []
         filename = (cls.__name__) + '.json'
+        if os.stat(filename).st_size == 0:
+            return []
         with open(filename, encoding="UTF-8") as f:
             data = f.read()
             string_r = Base.from_json_string(data)
             for instances in string_r:
                 list_l.append(cls.create(**instances))
+            return (list_l)
+    
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        filename = (cls.__name__) + '.csv'
+        with open(filename, 'w') as csvfile:
+            if cls.__name__ == 'Rectangle':
+                fieldnames = ['id', 'width', 'height', 'x', 'y']
+            else:
+                fieldnames = ['id', 'size', 'x', 'y']
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            for data in list_objs:
+                writer.writerow(data.to_dictionary())
+
+    @classmethod
+    def load_from_file_csv(cls):
+        filename = (cls.__name__) + '.csv'
+        list_l = []
+        if os.stat(filename).st_size == 0:
+            return []
+        with open(filename, 'r', encoding="UTF-8") as csvfile:
+            reader = csv.DictReader(csvfile)
+            for i in reader:
+                for key, value in i.items():
+                    i[key] = value
+                list_l.append(cls.create(**i))
                 return (list_l)
