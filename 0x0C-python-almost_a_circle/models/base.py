@@ -62,14 +62,15 @@ class Base:
         """funcion principal prueba"""
         list_l = []
         filename = (cls.__name__) + '.json'
-        if os.stat(filename).st_size == 0:
+        try:
+            with open(filename, 'r', encoding="UTF-8") as f:
+                data = f.read()
+                string_r = Base.from_json_string(data)
+                for instances in string_r:
+                    list_l.append(cls.create(**instances))
+                return (list_l)
+        except:
             return []
-        with open(filename, 'r', encoding="UTF-8") as f:
-            data = f.read()
-            string_r = Base.from_json_string(data)
-            for instances in string_r:
-                list_l.append(cls.create(**instances))
-            return (list_l)
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
