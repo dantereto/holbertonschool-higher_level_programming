@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """start the function"""
 
+import turtle
 
 import json
 
@@ -44,9 +45,20 @@ class Base:
     def create(cls, **dictionary):
         if cls.__name__ == 'Rectangle':
             from models.rectangle import Rectangle
-            dummy = Rectangle(1, 1)
+            dummy = cls(3, 7, 5, 8)
         if cls.__name__ == 'Square':
             from models.square import Square
-            dummy = Square(1, 1)
+            dummy = cls(3, 7, 5)
         dummy.update(**dictionary)
         return (dummy)
+    
+    @classmethod
+    def load_from_file(cls):
+        list_l = []
+        filename = (cls.__name__) + '.json'
+        with open(filename, encoding="UTF-8") as f:
+            data = f.read()
+            string_r = Base.from_json_string(data)
+            for instances in string_r:
+                list_l.append(cls.create(**instances))
+                return (list_l)
