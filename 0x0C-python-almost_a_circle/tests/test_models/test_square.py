@@ -1,4 +1,3 @@
-  
 #!/usr/bin/python3
 import unittest
 from models.base import Base
@@ -16,8 +15,6 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(3 * 3, s3.area())
         s3 = Square(3, 1, 12, 4)
         self.assertEqual(3 * 3, s3.area())
-        s1 = Square(9)
-        self.assertEqual(s1.__str__(), '[Square] (3) 0/0 - 9')
         s1.update(43)
         self.assertEqual(43, s1.id)
         s1.update(43, 98)
@@ -33,7 +30,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(1, s1.y)
         s1 = Square(10, 2, 1)
         s1_dictionary = s1.to_dictionary()
-        self.assertEqual(s1_dictionary, {'id': 4, 'x': 2, 'size': 10, 'y': 1})
+        self.assertEqual(s1_dictionary, {'id': 3, 'x': 2, 'size': 10, 'y': 1})
     def error_cases(self):
         with self.assertRaises(TypeError):
              r = Square('10')
