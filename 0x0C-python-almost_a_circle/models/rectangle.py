@@ -6,9 +6,10 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """start"""
+    """funcion principal prueba"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """funcion principal prueba"""
         self.width = width
         self.height = height
         self.x = x
@@ -17,10 +18,12 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """funcion principal prueba"""
         return(self.__width)
 
     @width.setter
     def width(self, value):
+        """funcion principal prueba"""
         if type(value) != int:
             raise TypeError('width must be an integer')
         if value <= 0:
@@ -29,10 +32,12 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """funcion principal prueba"""
         return(self.__height)
 
     @height.setter
     def height(self, value):
+        """funcion principal prueba"""
         if type(value) != int:
             raise TypeError('height must be an integer')
         if value <= 0:
@@ -41,10 +46,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """funcion principal prueba"""
         return(self.__x)
 
     @x.setter
     def x(self, value):
+        """funcion principal prueba"""
         if type(value) != int:
             raise TypeError('x must be an integer')
         if value < 0:
@@ -53,10 +60,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """funcion principal prueba"""
         return(self.__y)
 
     @y.setter
     def y(self, value):
+        """funcion principal prueba"""
         if type(value) != int:
             raise TypeError('y must be an integer')
         if value < 0:
@@ -64,20 +73,24 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """funcion principal prueba"""
         return (self.__width * self.__height)
 
     def display(self):
+        """funcion principal prueba"""
         for i in range(self.__y):
             print('')
         for j in range(self.__height):
             print(' ' * self.__x + '#' * self.__width)
 
     def __str__(self):
+        """funcion principal prueba"""
         return ("[{}] ({}) {:d}/{:d} - {:d}/{:d}".format
                 ('Rectangle', self.id, self.__x, self.__y,
                  self.__width, self.__height))
 
     def update(self, *args, **kwargs):
+        """funcion principal prueba"""
         if args:
             if len(args) > 0:
                 self.id = args[0]
@@ -94,6 +107,7 @@ class Rectangle(Base):
                 setattr(self, key, value)
 
     def to_dictionary(self):
+        """funcion principal prueba"""
         dict_r = {'id': self.id, 'width': self.width,
                   'height': self.height, 'x': self.x, 'y': self.y}
         return (dict_r)
