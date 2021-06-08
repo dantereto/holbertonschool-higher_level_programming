@@ -50,10 +50,10 @@ class Base:
         """funcion principal prueba"""
         if cls.__name__ == 'Rectangle':
             from models.rectangle import Rectangle
-            dummy = cls(3, 7, 5, 8)
+            dummy = cls(3, 7)
         if cls.__name__ == 'Square':
             from models.square import Square
-            dummy = cls(3, 7, 5)
+            dummy = cls(3)
         dummy.update(**dictionary)
         return (dummy)
 
