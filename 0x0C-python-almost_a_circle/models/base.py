@@ -8,12 +8,12 @@ import os
 
 
 class Base:
-    """start"""
+    """funcion principal prueba"""
 
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """hola"""
+        """funcion principal prueba"""
         if id is not None:
             self.id = id
         else:
@@ -21,14 +21,14 @@ class Base:
             self.id = Base.__nb_objects
 
     def to_json_string(list_dictionaries):
-        """hola"""
+        """funcion principal prueba"""
         if list_dictionaries is None or list_dictionaries is 0:
             return ('[]')
         return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """hola"""
+        """funcion principal prueba"""
         filename = (cls.__name__) + '.json'
         list_o = []
         if list_objs is not None:
@@ -38,14 +38,14 @@ class Base:
             return f.write(Base.to_json_string(list_o))
 
     def from_json_string(json_string):
-        """hola"""
+        """funcion principal prueba"""
         if json_string is None or json_string is 0:
             return ('[]')
         return json.loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
-        """hola"""
+        """funcion principal prueba"""
         if cls.__name__ == 'Rectangle':
             from models.rectangle import Rectangle
             dummy = cls(3, 7, 5, 8)
@@ -57,7 +57,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """hola"""
+        """funcion principal prueba"""
         list_l = []
         filename = (cls.__name__) + '.json'
         if os.stat(filename).st_size == 0:
@@ -71,7 +71,7 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
-        """hola"""
+        """funcion principal prueba"""
         filename = (cls.__name__) + '.csv'
         with open(filename, 'w') as csvfile:
             if cls.__name__ == 'Rectangle':
@@ -84,7 +84,7 @@ class Base:
 
     @classmethod
     def load_from_file_csv(cls):
-        """hola"""
+        """funcion principal prueba"""
         filename = (cls.__name__) + '.csv'
         list_l = []
         if os.stat(filename).st_size == 0:
