@@ -51,7 +51,7 @@ class Base:
             dummy = cls(3, 7, 5)
         dummy.update(**dictionary)
         return (dummy)
-    
+
     @classmethod
     def load_from_file(cls):
         list_l = []
