@@ -20,6 +20,7 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """funcion principal prueba"""
         if list_dictionaries is None or list_dictionaries is 0:
@@ -37,6 +38,7 @@ class Base:
         with open(filename, 'w') as f:
             return f.write(Base.to_json_string(list_o))
 
+    @staticmethod
     def from_json_string(json_string):
         """funcion principal prueba"""
         if json_string is None or json_string is 0:
