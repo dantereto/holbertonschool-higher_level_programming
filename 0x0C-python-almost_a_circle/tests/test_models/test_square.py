@@ -30,7 +30,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(1, s1.y)
         s1 = Square(10, 2, 1)
         s1_dictionary = s1.to_dictionary()
-        self.assertEqual(s1_dictionary, {'id': 3, 'x': 2, 'size': 10, 'y': 1})
+        self.assertEqual(s1_dictionary, {'id': 6, 'x': 2, 'size': 10, 'y': 1})
     def error_cases(self):
         with self.assertRaises(TypeError):
              r = Square('10')
@@ -63,5 +63,5 @@ class TestMaxInteger(unittest.TestCase):
         with self.assertRaises(ValueError):
             r = Square(3.9)
 
-if __name__ == '__main__':
+if __name__ == '__main__':    
     unittest.main()
