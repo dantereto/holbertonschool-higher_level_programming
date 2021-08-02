@@ -1,10 +1,11 @@
 #!/usr/bin/node
-const x = parseInt(process.argv[2]);
+const num = parseInt(process.argv[2]);
 function factorial (x) {
   if (x === 0) {
     return 1;
-  } else {
-    return (x * factorial(x - 1));
   }
+  return x * factorial(x - 1);
 }
-console.log(factorial(x));
+if (num > 0) {
+  console.log(factorial(num));
+}
