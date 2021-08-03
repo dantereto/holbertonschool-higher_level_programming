@@ -1,2 +1,2 @@
-#!/usr/bin/nod
+#!/usr/bin/node
 module.exports = class Rectangle {}
