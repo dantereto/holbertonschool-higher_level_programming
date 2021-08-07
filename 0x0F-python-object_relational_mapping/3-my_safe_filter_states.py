@@ -13,9 +13,7 @@ if __name__ == '__main__':
         db=sys.argv[3])
 
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states\
-    WHERE name = %s\
-    ORDER BY id ASC".format(sys.argv[4]))
+    cursor.execute("SELECT * FROM states")
     data = cursor.fetchall()
     for row in data:
         if row[1] == sys.argv[4]:
