@@ -11,10 +11,11 @@ engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
 
 if __name__ == '__main__':
 
+    Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    newS = State(name = 'California')
-    newC = City(name = 'San Francisco')
+    newS = State(name='California')
+    newC = City(name='San Francisco')
     newS.cities.append(newC)
     session.add(newS)
     session.commit()
