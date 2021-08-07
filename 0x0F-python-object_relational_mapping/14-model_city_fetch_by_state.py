@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""start the function"""
 
 from model_city import City
 from model_state import Base, State
