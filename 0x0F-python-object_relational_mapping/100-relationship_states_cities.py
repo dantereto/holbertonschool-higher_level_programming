@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""start the function"""
+
 from relationship_city import City
 from relationship_state import Base, State
 from sqlalchemy import (create_engine)

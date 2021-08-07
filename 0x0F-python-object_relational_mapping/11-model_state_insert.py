@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""start the function"""
 
 from model_state import Base, State
 from sqlalchemy import insert

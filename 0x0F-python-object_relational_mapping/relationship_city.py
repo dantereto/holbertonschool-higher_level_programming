@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""start the function"""
 
 from relationship_state import Base, State
 from sqlalchemy.ext.declarative import declarative_base
