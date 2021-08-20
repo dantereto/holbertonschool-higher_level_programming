@@ -7,7 +7,7 @@ import sys
 
 if __name__ == '__main__':
     try:
-        
+
         with urllib.request.urlopen(sys.argv[1]) as response:
             the_page = response.read()
             print(the_page.decode('utf-8'))
