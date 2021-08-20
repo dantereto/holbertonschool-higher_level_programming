@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-"""creste function"""
+"""create function"""
 
 
 def find_peak(list_of_integers):
-    result = 0
-    if not list_of_integers:
+    if bool(list_of_integers) is False:
         return None
-    i = 1
     list_of_integers.sort()
-    result = list_of_integers[-1]
-    return result
+    return list_of_integers[-1]
