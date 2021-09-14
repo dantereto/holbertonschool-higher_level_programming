@@ -3,7 +3,7 @@
 const request = require('request');
 request(process.argv[2], (err, res, body) => {
   if (err) {
-      return console.log(err);
+    return console.log(err);
   }
   const path = JSON.parse(body).results;
   let cont = 0;
