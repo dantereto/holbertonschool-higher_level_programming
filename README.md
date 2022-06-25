@@ -13,21 +13,25 @@ Table of Contents
 <h2 name="About"> About </h2>
 in this directory we will see this:
 
-* How use c
-* Compilation
+* How use Python
+* Variables, data structures, operators, expressions, loops, nested loops
 * Functions
-* Debugging
+* Classes and Inherance
 * Linked list
-* Variables, types, operators, expressions, loops, nested loops
-* Recursion
-* Makefiles
-* Shell
-* Static and dinamics
+* Unit Testing
+* Objects
+* SQL and SQLAlchemy
+* And more
 
 <h2 name="Requirements"> Requirements </h2>
 
 * Ubuntu 20.04 LTS
+* Python 3.8.5
+* pip3 1.5
+* pep8 1.7
+* MySQL 8.0.25
+* SQLAlchemy 1.1
 
 <h2 name="Projects"> Projects </h2>
 
-* <a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x00-hello_world">0x00-hello_world</a>
+* <a href="https://github.com/dantereto/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world">0x00-python-hello_world</a>
