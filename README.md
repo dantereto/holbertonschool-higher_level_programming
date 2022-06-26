@@ -59,4 +59,4 @@ in this directory we will see this:
 * <a href="https://github.com/dantereto/holbertonschool-higher_level_programming/tree/master/0x15-javascript-web_jquery">0x15-javascript-web_jquery</a>
 
 <h2 name="Credits"> Credits </h2>
-<p>this project was made by Daniel Escobar <a href="https://www.linkedin.com/in/daniel-felipe-escobar-chavez-7823881b6/">dantereto</a></p>
+<p>This project was made by Daniel Escobar <a href="https://www.linkedin.com/in/daniel-felipe-escobar-chavez-7823881b6/">dantereto</a></p>
