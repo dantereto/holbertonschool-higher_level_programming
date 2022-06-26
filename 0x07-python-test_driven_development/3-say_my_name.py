@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""create the function"""
+"""Say your namen"""
 
 
 def say_my_name(first_name, last_name=""):
