@@ -60,6 +60,7 @@ in this directory we will see this:
 
 <h2 name="Credits"> Credits </h2>
 <p>This project was made by Daniel EscobaR</p>
+
 * <a href="https://twitter.com/Danielf05128222">Twitter</a>
 * <a href="https://www.linkedin.com/in/daniel-felipe-escobar-chavez-7823881b6/">Linkedin</a>
 * <a href="https://github.com/capolaniaq/Turitrav">Porfolio Projec</a>
