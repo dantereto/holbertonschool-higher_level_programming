@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""create function"""
+"""make a divsion of a matrix"""
 
 
 def matrix_divided(matrix, div):
-    """start"""
+    """chek if everithing is working"""
 
     if div == 0:
         raise ZeroDivisionError('division by zero')
