@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""create the function"""
+"""Add the integer"""
 
 
 def add_integer(a, b=98):
-    """start"""
+    """try to do the funtion"""
 
     try:
         if type(a) is not int and type(a) is not float:
