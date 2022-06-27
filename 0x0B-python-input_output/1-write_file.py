@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""creste function"""
+"""create function"""
 
 
 def write_file(filename="", text=""):
