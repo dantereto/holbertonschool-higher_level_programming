@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""hi"""
+"""function to read a file"""
 
 
 def read_file(filename=""):
